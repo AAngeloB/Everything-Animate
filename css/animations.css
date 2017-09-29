@@ -18,31 +18,37 @@ div#matrix{
 
 div#animate{
 	animation: animate 5s;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 3;
 }
 
 @keyframes animate{
 	10%{
+		transform: translateX(500px); 
 		opacity: 10;
 		background-color: red;
 	}
 	20%{
+		transform: translateY(500px);
 		opacity: 20;
 		background-color: orange;
 	}
 	40%{
+		transform: translateX(0px);
 		opacity: 40;
 		background-color: yellow;
 	}
 	60%{
+		transform: translateX(500px);
 		opacity: 60;
 		background-color: green;
 	}
 	80%{
+		transform: translateY(500px);
 		opacity: 80;
 		background-color: blue;
 	}
 	100%{
+		transform: translateY(0px);
 		opacity: 100;
 		background-color: purple;
 	}
