@@ -13,17 +13,18 @@ div#all{
 }
 
 div#matrix{
-	transform: matrix();
+	transform: matrix(1, -1, 0.5, 0.5, 6, 3);
 }
 
 div#animate{
 	animation: animate 5s;
+	animation-iteration-count: infinite;
 }
 
-@keyframes animate {
-	0%{
-		opacity: 0;
-		background-color: red
+@keyframes animate{
+	10%{
+		opacity: 10;
+		background-color: red;
 	}
 	20%{
 		opacity: 20;
@@ -41,4 +42,14 @@ div#animate{
 		opacity: 80;
 		background-color: blue;
 	}
+	100%{
+		opacity: 100;
+		background-color: purple;
+	}
+
 }
+
+#pseudo:hover{
+	background-color: black;
+}
+
