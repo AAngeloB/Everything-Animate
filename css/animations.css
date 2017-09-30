@@ -18,18 +18,20 @@ div#matrix{
 
 div#animate{
 	animation: animate 5s;
-	animation-iteration-count: 3;
+	animation-iteration-count: infinite;
+	transform: rotate(180deg);
+
 }
 
 @keyframes animate{
 	10%{
 		transform: translateX(500px); 
-		opacity: 10;
+		opacity: 40;
 		background-color: red;
 	}
 	20%{
 		transform: translateY(500px);
-		opacity: 20;
+		opacity: 40;
 		background-color: orange;
 	}
 	40%{
@@ -39,23 +41,22 @@ div#animate{
 	}
 	60%{
 		transform: translateX(500px);
-		opacity: 60;
+		opacity: 40;
 		background-color: green;
 	}
 	80%{
 		transform: translateY(500px);
-		opacity: 80;
+		opacity: 40;
 		background-color: blue;
 	}
 	100%{
 		transform: translateY(0px);
-		opacity: 100;
+		opacity: 40;
 		background-color: purple;
 	}
 
 }
 
 #pseudo:hover{
-	background-color: black;
+	background-color: #66ffff;
 }
-
